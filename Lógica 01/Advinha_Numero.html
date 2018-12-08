@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h3>Acerte o número</h3>
+<input>
+<button>Send</button>
+
+
+<script type="text/javascript">
+	var palpiteUsuario = document.querySelector("input");
+	var numeroSecreto;
+	var botaoSend = document.querySelector("button");
+
+
+	function gerarSegredo(){
+		numeroSecreto= Math.round(Math.random()*10);
+
+		if(numeroSecreto==palpiteUsuario.value){
+				alert("Acertou!!!")
+		} else{
+			alert("Errou: "+numeroSecreto)
+			palpiteUsuario.focus();
+		}
+	
+	}
+
+	botaoSend.onclick = gerarSegredo;
+
+
+
+
+
+</script>
+

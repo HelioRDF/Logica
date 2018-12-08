@@ -1,0 +1,34 @@
+<meta charset="Utf8">
+
+<script>
+
+	var listaNomes= ["Helio","Aline","Luzia","Neguinha"];
+	listaNomes.push("Teté");
+	lerLista();
+
+	function lerLista(){
+		var num=0;
+		while(num<listaNomes.length){
+			document.write(listaNomes[num]);
+			document.write("<br>");
+			num++;
+
+		}
+
+	}
+
+	function infos(nomeArg, idadeArg){
+		alert("Nome é: "+nomeArg+" --- Idade é: "+idadeArg)
+	}
+
+	function repetirNumeros(repetirArg){
+		var cont=1;
+		while(repetirArg>cont){
+			document.write("Numero: "+cont);
+			document.write("<br>");
+			cont=cont+1;
+		}
+
+	}
+
+</script>

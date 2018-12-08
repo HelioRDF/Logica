@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+	function somar(valor1, valor2){
+		return valor1+valor2;
+	}
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function condicoes(resultado){
+		pulaLinha();
+		if(resultado > 10){
+			document.write("Maior que 10");
+		}
+
+		if(resultado < 10){
+			document.write("Menor que 10");
+		}
+	}
+
+	var valor1 = parseInt(prompt("Digite o primeiro valor"));
+	var valor2 = parseInt(prompt("Digite o segundo valor"));
+	var resultado= somar(valor1,valor2);
+	document.write("Soma: "+resultado);
+
+	condicoes(resultado);
+
+	
+
+</script>
